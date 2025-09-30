@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventuras com Git</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/scroll-solid-full.svg">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h3>Aventure-se com o Git na <span>Suécia!</span></h3>
+        <div class="items">
+            <div class="item1">Português</div>
+            <div class="item2">Geografia</div>
+            <div class="item3">História</div>
+            <div class="item4">Ed. Física</div>
+            <div class="item5">Tecnologia</div>
+        </div>
+    </header>
+
+    <div class="container1">
+
+    </div>
+
+    <div class="container2">
+        
+    </div>
+
+    <div class="container3">
+        
+    </div>
+
+    <div class="container4">
+        
+    </div>
+
+    <div class="container5">
+        
+    </div>
+
+    <script>
+        document.querySelector('.item1').onclick = function () {
+            document.querySelector('header').style.borderBottom = "5px solid #bb0752";
+        }
+
+        document.querySelector('.item2').onclick = function () {
+            document.querySelector('header').style.borderBottom = "5px solid #e06908";
+        }
+
+        document.querySelector('.item3').onclick = function () {
+            document.querySelector('header').style.borderBottom = "5px solid #fc0000";
+        }
+
+        document.querySelector('.item4').onclick = function () {
+            document.querySelector('header').style.borderBottom = "5px solid #07bb76";
+        }
+
+        document.querySelector('.item5').onclick = function () {
+            document.querySelector('header').style.borderBottom = "5px solid #0791bb";
+        }
+    </script>
+</body>
+
+</html>

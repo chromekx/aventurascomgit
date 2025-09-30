@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend';
+    transition: all 0.5 ease;
+}
+
+header {
+    background-color: #e7e7e7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 90px;
+}
+
+header h3 {
+    font-size: 40px;
+    margin: 20px;
+}
+
+span {
+    font-weight: bolder;
+    background: url("images/suecia.png") no-repeat center center;
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+}
+
+.items {
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.item1, .item2, .item3, .item4, .item5 {
+    background-color: transparent;
+    border-bottom: 5px solid transparent;
+    padding: 48px 20px 48px 20px;
+    align-self: center;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.1s ease;
+    cursor: pointer;
+}
+
+.item1:hover {
+    background-color: #bb07529a;
+    border-bottom-color: #bb0752;
+    color: #fff;
+}
+
+.item1:hover header {
+    border-bottom-color: #bb0752;
+}
+
+.item2:hover {
+    background-color: #df69089a;
+    border-bottom-color: #e06908;
+    color: #fff;
+}
+
+.item3:hover {
+    background-color: #fc00009a;
+    border-bottom-color: #fc0000;
+    color: #fff;
+}
+
+.item4:hover {
+    background-color: #07bb769a;
+    border-bottom-color: #07bb76;
+    color: #fff;
+}
+
+.item5:hover {
+    background-color: #0791bb9a;
+    border-bottom-color: #0791bb;
+    color: #fff;
+}
