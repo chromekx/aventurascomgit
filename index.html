@@ -15,7 +15,10 @@
 
 <body>
     <header>
-        <h3>Aventure-se com o Git na <span>Suécia!</span></h3>
+        <label for="menu" class="icon">&#9776;</label>
+        <input type="checkbox" id="menu">
+
+        <h3 class="titulo">Aventure-se com o Git na&nbsp;<span>Suécia!</span></h3>
         <div class="items">
             <div class="item1">Português</div>
             <div class="item2">Geografia</div>
@@ -29,9 +32,12 @@
         <h1>Bem vindo à nova aventura com o Git!</h1>
         <p>Aqui, nós vamos descobrir sobre a localização, origem, esportes e
             tecnologia da Suécia, tudo com base nas matérias escolares! Vamos dar uma olhada? Basta clicar em uma das
-            opções acima.
+            opções acima. Caso esteja em uma tela menor, será necessário clicar no botão de menu primeiro.
         </p>
-        <img src="images/suecia.png" class="foto">
+
+        <div class="fotos">
+            <img src="images/suecia.png" class="foto">
+        </div>
     </div>
 
     <div class="container1">
@@ -123,9 +129,9 @@
         document.querySelector('.item1').onclick = function () {
             document.querySelector('header').style.borderBottom = "5px solid #bb0752";
             document.querySelector('body').style.backgroundColor = "#bb07529a";
-            
+
             document.querySelector('.apresentacao').style.display = "none";
-            document.querySelector('.container1').style.display = "block";
+            document.querySelector('.container1').style.display = "flex";
             document.querySelector('.container2').style.display = "none";
             document.querySelector('.container3').style.display = "none";
             document.querySelector('.container4').style.display = "none";
@@ -138,7 +144,7 @@
 
             document.querySelector('.apresentacao').style.display = "none";
             document.querySelector('.container1').style.display = "none";
-            document.querySelector('.container2').style.display = "block";
+            document.querySelector('.container2').style.display = "flex";
             document.querySelector('.container3').style.display = "none";
             document.querySelector('.container4').style.display = "none";
             document.querySelector('.container5').style.display = "none";
@@ -151,7 +157,7 @@
             document.querySelector('.apresentacao').style.display = "none";
             document.querySelector('.container1').style.display = "none";
             document.querySelector('.container2').style.display = "none";
-            document.querySelector('.container3').style.display = "block";
+            document.querySelector('.container3').style.display = "flex";
             document.querySelector('.container4').style.display = "none";
             document.querySelector('.container5').style.display = "none";
         }
@@ -164,7 +170,7 @@
             document.querySelector('.container1').style.display = "none";
             document.querySelector('.container2').style.display = "none";
             document.querySelector('.container3').style.display = "none";
-            document.querySelector('.container4').style.display = "block";
+            document.querySelector('.container4').style.display = "flex";
             document.querySelector('.container5').style.display = "none";
         }
 
@@ -177,7 +183,7 @@
             document.querySelector('.container2').style.display = "none";
             document.querySelector('.container3').style.display = "none";
             document.querySelector('.container4').style.display = "none";
-            document.querySelector('.container5').style.display = "block";
+            document.querySelector('.container5').style.display = "flex";
         }
     </script>
 </body>

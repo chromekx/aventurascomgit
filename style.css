@@ -76,19 +76,79 @@ span {
     color: #fff;
 }
 
-.apresentacao, .container1, .container2, .container3, .container4, .container5 {
+.icon {
+    display: none;
+    font-size: 30px;
+    color: #006aa7;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+@media (max-width: 1600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        /* necessário para posicionar o menu internamente */
+        z-index: 10;
+    }
+    
+    .items {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out;
+        background: #e7e7e7;
+        z-index: 20;
+        margin: 0;
+        font-size: 20px;
+    }
+
+    #menu:checked~.items {
+        max-height: 695px;
+    }
+
+    .item1, .item2, .item3, .item4, .item5 {
+        min-width: 100%;
+        border-top: 3px solid #fff;
+        text-align: center;
+    }
+
+    .icon {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        font-size: 40px;
+        cursor: pointer;
+        z-index: 30;
+        font-weight: bold;
+    }
+
+    .titulo {
+        padding: 8px;
+        display: flex;
+        font-size: 30px;
+        align-self: center;
+    }
+}
+
+.container1, .container2, .container3, .container4, .container5 {
     background-color: #e7e7e7;
     padding: 70px;
     font-size: 20px;
-    display: flex;
     justify-self: center;
     flex-direction: column;
-    margin: 100px;
+    margin: 50px;
     border-radius: 20px;
-    position: absolute;
     display: none;
     text-wrap: wrap;
-    translate: 0px -70px;
     max-width: 1400px;
 }
 
@@ -97,13 +157,12 @@ span {
     padding: 70px;
     font-size: 20px;
     display: flex;
-    margin: 150px;
+    margin: 50px;
     flex-direction: column;
     border-radius: 20px;
-    position: absolute;
     text-wrap: wrap;
     max-width: 1000px;
-    justify-content: center;
+    justify-self: center;
 }
 
 .apresentacao h1 {
@@ -141,15 +200,113 @@ span {
     margin-bottom: 30px;
 }
 
-.foto {
-    width: 450px;
-    height: 250px;
+.foto, .foto1 {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
     border-radius: 30px;
-    margin: 50px;
+    object-fit: contain;
     justify-self: center;
+    margin: 30px;
+    box-shadow: 0px 30px 40px -20px #00000099;
+}
+
+.foto:hover {
+    scale: 105%;
+    transition: scale 0.5s;
 }
 
 .fotos {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 25px;
+    }
+    
+    .container1, .container2, .container3, .container4, .container5 {
+        text-align: justify;
+        justify-content: center;
+    }
+
+    .item1, .item2, .item3, .item4, .item5 {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .titulo {
+        font-size: 20px;
+    }
+    
+    .container1 h2, .container2 h2, .container3 h2, .container4 h2, .container5 h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .container1, .container2, .container3, .container4, .container5 {
+        font-size: 15px;
+        padding: 70px;
+        margin: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .titulo {
+        font-size: 18px;
+    }
+
+    .items {
+        font-size: 18px;
+    }
+
+    .icon {
+        font-size: 25px;
+        top: 40px;
+    }   
+
+    .container1 h2, .container2 h2, .container3 h2, .container4 h2, .container5 h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .container1, .container2, .container3, .container4, .container5 {
+        font-size: 13px;
+        padding: 60px;
+        margin: 30px;
+    }
+}
+
+@media (max-width: 425px) {
+    header {
+        height: 60px;
+    }
+
+    .icon {
+        top: 30px;
+    }
+
+    .items {
+        font-size: 15px;
+    }
+
+    .titulo {
+        font-size: 13px;
+        translate: 0px -5px;
+    }
+
+    .container1 h2, .container2 h2, .container3 h2, .container4 h2, .container5 h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .container1, .container2, .container3, .container4, .container5 {
+        font-size: 13px;
+        padding: 40px;
+        margin: 30px;
+    }
+
 }
