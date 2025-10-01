@@ -1,6 +1,4 @@
 # aventurascomgit
-Atividade
-
 Victor Henrique Souza
 Unidade Curricular: Publicar Aplicações Web
 
