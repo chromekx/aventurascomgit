@@ -52,10 +52,6 @@ span {
     color: #fff;
 }
 
-.item1:hover header {
-    border-bottom-color: #bb0752;
-}
-
 .item2:hover {
     background-color: #df69089a;
     border-bottom-color: #e06908;
@@ -78,4 +74,82 @@ span {
     background-color: #0791bb9a;
     border-bottom-color: #0791bb;
     color: #fff;
+}
+
+.apresentacao, .container1, .container2, .container3, .container4, .container5 {
+    background-color: #e7e7e7;
+    padding: 70px;
+    font-size: 20px;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    margin: 100px;
+    border-radius: 20px;
+    position: absolute;
+    display: none;
+    text-wrap: wrap;
+    translate: 0px -70px;
+    max-width: 1400px;
+}
+
+.apresentacao {
+    background-color: #e7e7e7;
+    padding: 70px;
+    font-size: 20px;
+    display: flex;
+    margin: 150px;
+    flex-direction: column;
+    border-radius: 20px;
+    position: absolute;
+    text-wrap: wrap;
+    max-width: 1000px;
+    justify-content: center;
+}
+
+.apresentacao h1 {
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.container1 h2{
+    color: #bb0752;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.container2 h2{
+    color: #e06908;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.container3 h2{
+    color: #fc0000;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.container4 h2{
+    color: #07bb76;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.container5 h2{
+    color: #0791bb;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.foto {
+    width: 450px;
+    height: 250px;
+    border-radius: 30px;
+    margin: 50px;
+    justify-self: center;
+}
+
+.fotos {
+    display: flex;
+    justify-content: space-around;
 }
