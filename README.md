@@ -1,7 +1,6 @@
 # aventurascomgit
-Atividade
-
 Victor Henrique Souza
+
 Unidade Curricular: Publicar Aplicações Web
 
 Aventuras Com Git é um site para informar seus usuários sobre 
